@@ -1,13 +1,30 @@
-# Sample Hardhat Project
+# 代码说明
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+**逻辑合约 Sahara.sol**
 
-Try running some of the following tasks:
-
+v1版本部署
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+npx hardhat run scripts/scripts/1.deploy_sahara.ts --network localhost
 ```
+与v1版本交互
+```shell
+npx hardhat saharav1 --network localhost
+```
+升级v2
+```shell
+npx hardhat run scripts/scripts/2.deploy_sahara.ts --network localhost
+```
+与v2版本交互
+```shell
+npx hardhat saharav2 --network localhost
+```
+
+升级v3
+```shell
+npx hardhat run scripts/scripts/3.deploy_sahara.ts --network localhost
+```
+与v3版本交互
+```shell
+npx hardhat saharav3 --network localhost
+```
+
